@@ -48,6 +48,10 @@ const mySlider_nav = new Swiper('.mySlider-nav', {
     touchEventsTarget: 'swiper-wrapper',
     touchRatio: 2,
     breakpoints: {
+        320: {
+    slidesPerView : 2,
+    spaceBetween : -60 
+        },
         360: {
     slidesPerView : 3,
     spaceBetween : -60 
@@ -98,6 +102,11 @@ const swiper1 = new Swiper('.mySlider-1', {
     spaceBetween : -150, 
     
     breakpoints: {
+        320: {
+    slidesPerGroup:1,
+    slidesPerView : 1,
+    spaceBetween : 120, 
+        },
         360: {
     slidesPerGroup:1,
     slidesPerView : 1,
@@ -163,6 +172,11 @@ const swiper2 = new Swiper('.mySlider-2', {
     spaceBetween : -150, 
     
     breakpoints: {
+        320: {
+    slidesPerGroup:1,
+    slidesPerView : 1,
+    spaceBetween : 120, 
+        },
         360: {
     slidesPerGroup:1,
     slidesPerView : 1,
@@ -227,6 +241,12 @@ const swiper3 = new Swiper('.mySlider-3', {
     spaceBetween : -150, 
     
     breakpoints: {
+        320: {
+    slidesPerGroup:1,
+    slidesPerView : 1,
+    spaceBetween : 120, 
+        },
+        
         360: {
     slidesPerGroup:1,
     slidesPerView : 1,
@@ -291,6 +311,11 @@ const swiper4 = new Swiper('.mySlider-4', {
     spaceBetween : -150, 
     
     breakpoints: {
+        320: {
+    slidesPerGroup:1,
+    slidesPerView : 1,
+    spaceBetween : 120, 
+        },
         360: {
     slidesPerGroup:1,
     slidesPerView : 1,
@@ -355,6 +380,12 @@ const swiper5 = new Swiper('.mySlider-5', {
     spaceBetween : -150, 
     
     breakpoints: {
+        320: {
+    slidesPerGroup:1,
+    slidesPerView : 1,
+    spaceBetween : 120, 
+        },
+        
         360: {
     slidesPerGroup:1,
     slidesPerView : 1,
@@ -419,6 +450,12 @@ const swiper6 = new Swiper('.mySlider-6', {
     spaceBetween : -150, 
     
     breakpoints: {
+        320: {
+    slidesPerGroup:1,
+    slidesPerView : 1,
+    spaceBetween : 120, 
+        },
+        
         360: {
     slidesPerGroup:1,
     slidesPerView : 1,
@@ -483,6 +520,12 @@ const swiper7 = new Swiper('.mySlider-7', {
     spaceBetween : -150, 
     
     breakpoints: {
+        320: {
+    slidesPerGroup:1,
+    slidesPerView : 1,
+    spaceBetween : 120, 
+        },
+        
         360: {
     slidesPerGroup:1,
     slidesPerView : 1,
@@ -547,6 +590,12 @@ const swiper8 = new Swiper('.mySlider-8', {
     spaceBetween : -150, 
     
     breakpoints: {
+        320: {
+    slidesPerGroup:1,
+    slidesPerView : 1,
+    spaceBetween : 120, 
+        },
+        
         360: {
     slidesPerGroup:1,
     slidesPerView : 1,
@@ -611,6 +660,12 @@ const swiper_testi = new Swiper('.mySlider-testi', {
     spaceBetween : -90,
     
     breakpoints: {
+        320: {
+    slidesPerGroup:1,
+    slidesPerView : 1,
+    spaceBetween : 190, 
+        },
+        
         360: {
     slidesPerGroup:1,
     slidesPerView : 1,
