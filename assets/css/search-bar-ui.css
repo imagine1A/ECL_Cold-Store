@@ -4,6 +4,14 @@
   border-style: none;
   background: transparent;
   outline: none;
-  width: 266px;
+  width: 186px;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 576px) {
+  .search-box {
+    width: 239px;
+    text-overflow: ellipsis;
+  }
 }
 
