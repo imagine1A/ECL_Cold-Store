@@ -1330,3 +1330,21 @@ footer_n {
   }
 }
 
+.hero-banner-image-1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 20px;
+  padding: 0px;
+}
+
+@media (min-width: 1400px) {
+  .hero-banner-image-1 {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    row-gap: 20px;
+    padding: 0px 135px;
+  }
+}
+
