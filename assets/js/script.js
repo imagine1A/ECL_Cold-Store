@@ -661,6 +661,9 @@ const swiper_testi = new Swiper('.mySlider-testi', {
     
     breakpoints: {
         320: {
+    slideOffsetAfter: -60,
+    slidesOffsetBefore: 20,
+    spaceBetween : -90,
     slidesPerGroup:1,
     slidesPerView : 1,
     spaceBetween : 190, 
