@@ -666,13 +666,13 @@ const swiper_testi = new Swiper('.mySlider-testi', {
     spaceBetween : -90,
     slidesPerGroup:1,
     slidesPerView : 1,
-    spaceBetween : 190, 
+    spaceBetween : 20, 
         },
         
         360: {
     slidesPerGroup:1,
     slidesPerView : 1,
-    spaceBetween : 190, 
+    spaceBetween : 30, 
         },
         
         576: {
