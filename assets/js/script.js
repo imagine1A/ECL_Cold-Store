@@ -721,3 +721,89 @@ const swiper_testi = new Swiper('.mySlider-testi', {
     //   el: '.swiper-scrollbar',
     // },
   });
+
+
+const swiper_about = new Swiper('.mySlider-about', {
+    
+    autoplay: {
+        delay: 2000, // Delay between slides in milliseconds
+        disableOnInteraction: false, // Allow manual navigation while autoplay is active
+      
+      }, 
+    effect: 'fade', // Set the transition effect to fade
+      fadeEffect: {
+        crossFade: true, // Enable cross fade between slides
+      },
+    
+  });
+
+const swiper_vid = new Swiper('.mySlider-vid', {
+    // Optional parameters
+    direction: 'horizontal',
+   
+    
+    slideOffsetAfter: -60,
+    // slidesOffsetBefore: 20,
+    // swiperSlideSize: 320,
+    slidesPerGroup:2,
+    slidesPerView : 3,
+    spaceBetween : -90,
+    
+    breakpoints: {
+        320: {
+    slideOffsetAfter: -60,
+    slidesOffsetBefore: 20,
+    spaceBetween : -90,
+    slidesPerGroup:1,
+    slidesPerView : 1,
+    spaceBetween : 20, 
+        },
+        
+        360: {
+    slidesPerGroup:1,
+    slidesPerView : 1,
+    spaceBetween : 30, 
+        },
+        
+        576: {
+    slidesPerGroup:1,
+    slidesPerView : 2,
+    spaceBetween : 100, 
+        },
+        
+         768: {
+    slidesPerGroup:1,
+    slidesPerView : 2,
+    spaceBetween : 180, 
+        },
+        992: {
+    slidesPerGroup:2,
+    slidesPerView : 2,
+    spaceBetween : 30, 
+        },
+        
+        1200: {
+    slidesPerGroup:1,
+    slidesPerView : 1,
+    spaceBetween : 70, 
+        },
+        1920: {
+    slidesPerGroup:3,
+    slidesPerView : 3,
+    spaceBetween : 100, 
+        }
+    },
+    
+    
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next13',
+      prevEl: '.swiper-button-prev13',
+    },
+  
+    // And if we need scrollbar
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+  });
