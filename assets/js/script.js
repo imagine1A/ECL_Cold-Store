@@ -85,6 +85,52 @@ const mySlider_nav = new Swiper('.mySlider-nav', {
   });
 
 
+const mySlider_nav_adm = new Swiper('.mySlider-nav_adm', {
+    // Optional parameters
+    direction: 'horizontal',
+    // slideOffsetAfter: -60,
+    // swiperSlideSize: 320,
+    
+    // slidesPerView : 7,
+    // spaceBetween : -150,    
+    touchEventsTarget: 'swiper-wrapper',
+    touchRatio: 2,
+    breakpoints: {
+        320: {
+    slidesPerView : 2,
+    spaceBetween : -60 
+        },
+        360: {
+    slidesPerView : 3,
+    spaceBetween : -60 
+        },
+        
+        576: {
+    slidesPerView : 5,
+    spaceBetween : -90 
+        },
+        
+         768: {
+    slidesPerView : 7,
+    spaceBetween : -150, 
+        },
+        992: {
+    slidesPerView : 7,
+    spaceBetween : -150 
+        },
+        
+        1200: {
+    slidesPerView : 7,
+    spaceBetween : -150 
+        },
+      1920: {
+    slidesPerView : 7,
+    spaceBetween : -150 
+        }
+    },
+    // free-mode:"true",
+   centeredSlidesBounds:true,
+  });
 
 
 
@@ -737,7 +783,7 @@ const swiper_about = new Swiper('.mySlider-about', {
     
   });
 
-const swiper_vid = new Swiper('.mySlider-vid', {
+const swiper_vid = new Swiper('.swiper.mySlider-vid', {
     // Optional parameters
     direction: 'horizontal',
    
@@ -802,8 +848,73 @@ const swiper_vid = new Swiper('.mySlider-vid', {
       prevEl: '.swiper-button-prev13',
     },
   
-    // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
+   
+  });
+
+const swiper_vid1 = new Swiper('.mySlider-vid1', {
+    // Optional parameters
+    direction: 'horizontal',
+   
+    
+    slideOffsetAfter: -60,
+    // slidesOffsetBefore: 20,
+    // swiperSlideSize: 320,
+    slidesPerGroup:2,
+    slidesPerView : 3,
+    spaceBetween : -90,
+    
+    breakpoints: {
+        320: {
+    slideOffsetAfter: -60,
+    slidesOffsetBefore: 20,
+    spaceBetween : -90,
+    slidesPerGroup:1,
+    slidesPerView : 1,
+    spaceBetween : 20, 
+        },
+        
+        360: {
+    slidesPerGroup:1,
+    slidesPerView : 1,
+    spaceBetween : 30, 
+        },
+        
+        576: {
+    slidesPerGroup:1,
+    slidesPerView : 2,
+    spaceBetween : 100, 
+        },
+        
+         768: {
+    slidesPerGroup:1,
+    slidesPerView : 2,
+    spaceBetween : 180, 
+        },
+        992: {
+    slidesPerGroup:2,
+    slidesPerView : 2,
+    spaceBetween : 30, 
+        },
+        
+        1200: {
+    slidesPerGroup:1,
+    slidesPerView : 1,
+    spaceBetween : 70, 
+        },
+        1920: {
+    slidesPerGroup:3,
+    slidesPerView : 3,
+    spaceBetween : 100, 
+        }
+    },
+    
+    
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next14',
+      prevEl: '.swiper-button-prev14',
+    },
+  
+    
   });
