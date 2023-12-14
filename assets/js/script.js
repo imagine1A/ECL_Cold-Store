@@ -783,73 +783,6 @@ const swiper_about = new Swiper('.mySlider-about', {
     
   });
 
-const swiper_vid = new Swiper('.swiper.mySlider-vid', {
-    // Optional parameters
-    direction: 'horizontal',
-   
-    
-    slideOffsetAfter: -60,
-    // slidesOffsetBefore: 20,
-    // swiperSlideSize: 320,
-    slidesPerGroup:2,
-    slidesPerView : 3,
-    spaceBetween : -90,
-    
-    breakpoints: {
-        320: {
-    slideOffsetAfter: -60,
-    slidesOffsetBefore: 20,
-    spaceBetween : -90,
-    slidesPerGroup:1,
-    slidesPerView : 1,
-    spaceBetween : 20, 
-        },
-        
-        360: {
-    slidesPerGroup:1,
-    slidesPerView : 1,
-    spaceBetween : 30, 
-        },
-        
-        576: {
-    slidesPerGroup:1,
-    slidesPerView : 2,
-    spaceBetween : 100, 
-        },
-        
-         768: {
-    slidesPerGroup:1,
-    slidesPerView : 2,
-    spaceBetween : 180, 
-        },
-        992: {
-    slidesPerGroup:2,
-    slidesPerView : 2,
-    spaceBetween : 30, 
-        },
-        
-        1200: {
-    slidesPerGroup:1,
-    slidesPerView : 1,
-    spaceBetween : 70, 
-        },
-        1920: {
-    slidesPerGroup:3,
-    slidesPerView : 3,
-    spaceBetween : 100, 
-        }
-    },
-    
-    
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next13',
-      prevEl: '.swiper-button-prev13',
-    },
-  
-   
-  });
 
 const swiper_vid1 = new Swiper('.mySlider-vid1', {
     // Optional parameters
@@ -918,3 +851,5 @@ const swiper_vid1 = new Swiper('.mySlider-vid1', {
   
     
   });
+
+
