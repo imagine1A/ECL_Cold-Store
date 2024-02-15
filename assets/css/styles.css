@@ -1344,7 +1344,7 @@ footer_n {
 
 .title-banner {
   margin-top: 30px;
-  max-width: 910px;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
@@ -1353,7 +1353,8 @@ footer_n {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
-  gap: 8px;
+  gap: 32px;
+  width: 100%;
 }
 
 .nav-link.active.navv {
@@ -1411,5 +1412,31 @@ footer_n {
 
 select > option {
   font-family: 'Satoshi Regular';
+}
+
+.body-body {
+  padding: 36px 20px;
+  max-width: 1375px;
+}
+
+@media (min-width: 576px) {
+  .body-body {
+    padding: 80px 45px;
+    max-width: 1375px;
+  }
+}
+
+@media (min-width: 768px) {
+  .body-body {
+    padding: 136px 88px;
+    max-width: 1375px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .body-body {
+    padding: 136px 120px;
+    max-width: 1375px;
+  }
 }
 
