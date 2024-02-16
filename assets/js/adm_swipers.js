@@ -65,3 +65,52 @@ const swiper_video = new Swiper('.mySlider-video', {
   
    
   });
+
+
+const mySlider_nav_adm = new Swiper('.mySlider-nav_adm', {
+    // Optional parameters
+    direction: 'horizontal',
+    // slideOffsetAfter: -60,
+    // swiperSlideSize: 320,
+    
+    // slidesPerView : 7,
+    // spaceBetween : -150,    
+    touchEventsTarget: 'swiper-wrapper',
+    touchRatio: 2,
+    breakpoints: {
+        320: {
+    slidesPerView : 2,
+    spaceBetween : -60 
+        },
+        360: {
+    slidesPerView : 3,
+    spaceBetween : -60 
+        },
+        
+        576: {
+    slidesPerView : 5,
+    spaceBetween : -90 
+        },
+        
+         768: {
+    slidesPerView : 7,
+    spaceBetween : -150, 
+        },
+        992: {
+    slidesPerView : 7,
+    spaceBetween : -150 
+        },
+        
+        1200: {
+    slidesPerView : 7,
+    spaceBetween : -150 
+        },
+      1920: {
+    slidesPerView : 7,
+    spaceBetween : -150 
+        }
+    },
+    // free-mode:"true",
+   centeredSlidesBounds:true,
+  });
+
