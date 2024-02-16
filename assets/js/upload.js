@@ -1,6 +1,6 @@
-let dropArea = document.getElementById('drop-area');
-  let fileElem = document.getElementById('fileElem');
-  let gallery = document.getElementById('gallery');
+document.querySelectorAll('.drop-area').forEach(dropArea => {
+  let fileElem = dropArea.querySelector('.fileElem');
+  let gallery = dropArea.nextElementSibling;
 
   ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
     dropArea.addEventListener(eventName, preventDefaults, false);
@@ -16,6 +16,14 @@ let dropArea = document.getElementById('drop-area');
   });
 
   dropArea.addEventListener('drop', handleDrop, false);
+
+  dropArea.addEventListener('click', () => {
+    fileElem.click();
+  });
+
+  fileElem.addEventListener('change', function (e) {
+    handleFiles(this.files);
+  });
 
   function preventDefaults(e) {
     e.preventDefault();
@@ -36,29 +44,19 @@ let dropArea = document.getElementById('drop-area');
     handleFiles(files);
   }
 
-  dropArea.addEventListener('click', () => {
-    fileElem.click();
-  });
-
-  fileElem.addEventListener('change', function (e) {
-    handleFiles(this.files);
-  });
-
   function handleFiles(files) {
     files = [...files];
     files.forEach(previewFile);
   }
 
   function previewFile(file) {
-  let reader = new FileReader();
-  reader.readAsDataURL(file);
-  reader.onloadend = function () {
-    let img = document.createElement('img');
-    img.src = reader.result;
-
-    // Add a class to the img element
-    img.classList.add('preview-image'); // Replace  with the desired class name
-
-    gallery.appendChild(img);
+    let reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onloadend = function () {
+      let img = document.createElement('img');
+      img.src = reader.result;
+      img.classList.add('preview-image');
+      gallery.appendChild(img);
+    }
   }
-}
+});
