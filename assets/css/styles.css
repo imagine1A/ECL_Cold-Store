@@ -1440,3 +1440,23 @@ select > option {
   }
 }
 
+.delete-icon {
+  position: relative;
+  top: 5px;
+  right: 5px;
+  color: red;
+  cursor: pointer;
+}
+
+.preview-item video {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+.preview-item video {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
